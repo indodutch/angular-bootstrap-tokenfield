@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.css" />
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,7 +34,7 @@
                 <div class="text-left">
                     <form>
                         <label for="field1">Tokenfield:</label>
-                        <input my-tokenfield showAutocompleteOnFocus="true" source="['1','2','3','4','5','6','7','8','9']" inputType="number" id="field1" class="form-control" type="text" />
+                        <input angular-bootstrap-tokenfield show-autocomplete-on-focus="true" autocomplete="{source: ['1','2','3','4','5','6','7','8','9'], delay: 100}" id="field1" class="form-control" type="text" />
                     </form>
                 </div>
             </div>
@@ -44,6 +45,7 @@
     <!-- /.container -->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.js"></script>

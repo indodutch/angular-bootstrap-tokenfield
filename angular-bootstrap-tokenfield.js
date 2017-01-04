@@ -5,11 +5,10 @@
     var myModule = angular.module('angularTokenfield', []);
 
     // Define directive
-    myModule.directive ('myTokenfield', function() {
+    myModule.directive ('angularBootstrapTokenfield', function() {
         return {
             restrict: 'A',
             scope: {
-                'source': '=source',
                 'tokens': '=tokens',
                 'limit': '=limit',
                 'minLength': '=minLength',
