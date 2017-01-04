@@ -1,0 +1,24 @@
+{
+  "name": "angular-bootstrap-tokenfield",
+  "description": "Angular module for bootstrap tokenfield https://github.com/sliptree/bootstrap-tokenfield",
+  "main": "index.html",
+  "authors": [
+    "Berend Weel <b.weel@esciencecenter.nl>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "bootstrap-tokenfield": "^0.12.1",
+    "jquery": "^3.1.1"
+  }
+}

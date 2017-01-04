@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngTestApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Angular-Tokenfield - Angular Module for Bootstrap Tokenfield</title>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.css" />
+    <!-- endbower -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>An angular module for bootstrap tokenfield</h1>
+                <div class="text-left">
+                    <form>
+                        <label for="field1">Tokenfield:</label>
+                        <input my-tokenfield showAutocompleteOnFocus="true" source="['1','2','3','4','5','6','7','8','9']" inputType="number" id="field1" class="form-control" type="text" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-tokenfield/dist/bootstrap-tokenfield.js"></script>
+    <!-- endbower -->
+
+    <script src="src/directive/angular-tokenfield.js"></script>
+
+    <script src="test/app.js"></script>
+</body>
+
+</html>
