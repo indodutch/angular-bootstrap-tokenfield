@@ -21,7 +21,13 @@
                 'inputType': '=inputType'
             },
             link: function(scope, element, attrs) {
-                element.tokenfield(scope);
+                element.tokenfield(scope)[0];
+                scope.original = element[0]
+                scope.tokenInput = element.siblings('.token-input')[0];
+                scope.tokenInput.placeholder = '';
+                scope.$watch(function(){
+                    scope.tokenInput.placeholder = scope.original.placeholder;
+                });
             }
         }
     });
